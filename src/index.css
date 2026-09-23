@@ -1,0 +1,27 @@
+/* Pure CSS utilities & theme for Extreme Electronics */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-sans);
+}
+
+/* Offset for fixed sticky navbar */
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.02); }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2.5s infinite ease-in-out;
+}
